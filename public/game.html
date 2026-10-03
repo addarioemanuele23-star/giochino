@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Giochino - Scegli la tua Busta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="game-page">
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <header class="game-header">
+    <h1>Scegli la tua Busta del Destino</h1>
+    <p class="header-subtitle">Ogni busta nasconde un menu sgarro a tema film...</p>
+  </header>
+
+  <main class="envelopes-container" id="envelopesContainer">
+    <!-- Le 3 buste vengono generate da JS -->
+  </main>
+
+  <!-- Overlay per il menu rivelato -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-card" id="menuCard">
+      <button class="close-btn" id="closeMenu">&times;</button>
+      <div class="menu-genre" id="menuGenre"></div>
+      <h2 class="menu-film-title" id="menuFilmTitle"></h2>
+      <div class="menu-divider">&#10084;</div>
+      <div class="menu-courses">
+        <div class="course" id="courseAntipasto">
+          <h3>~ Antipasto ~</h3>
+          <p class="course-name"></p>
+          <p class="course-desc"></p>
+        </div>
+        <div class="course" id="coursePrimo">
+          <h3>~ Piatto Principale ~</h3>
+          <p class="course-name"></p>
+          <p class="course-desc"></p>
+        </div>
+        <div class="course" id="courseDolce">
+          <h3>~ Dolce ~</h3>
+          <p class="course-name"></p>
+          <p class="course-desc"></p>
+        </div>
+      </div>
+      <div class="menu-footer">
+        <p>Buon appetito, amore! 💋</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="new-game-container" id="newGameContainer" style="display:none;">
+    <button class="btn-new-game" id="btnNewGame">Nuova Partita</button>
+  </div>
+
+  <script src="/js/db.js"></script>
+  <script src="/js/game.js"></script>
+</body>
+</html>

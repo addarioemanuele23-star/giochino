@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Giochino del Menu Sgarro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-page">
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <div class="login-container" id="loginContainer">
+    <div class="login-card">
+      <div class="login-icon">💌</div>
+      <h1 class="login-title">Il Giochino<br>del Menu Sgarro</h1>
+      <p class="login-subtitle">Scopri il tuo menu del destino</p>
+
+      <form id="loginForm" class="login-form">
+        <div class="input-group">
+          <label for="username">Nome utente</label>
+          <input type="text" id="username" placeholder="Inserisci il tuo nome..." autocomplete="off">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Inserisci la password...">
+        </div>
+        <button type="submit" class="btn-login">Entra nel gioco</button>
+        <p class="error-msg" id="errorMsg"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>
